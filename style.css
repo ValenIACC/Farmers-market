@@ -1,20 +1,20 @@
 /* reset */
-*{
+/* *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+} */
 
-main{
+/* main{
     background-color:rgba(235, 235, 235, 0.849);
-}
+} */
 
 
 
 /* HEADER PARA MOVIL */
 /* Mobile -> emtre 320px y 768 px */
 
-@media screen and (max-width: 767px) {
+/* @media screen and (max-width: 767px) {
     header{
         justify-content: space-between;
         align-items: center;
@@ -53,13 +53,13 @@ main{
         color: white;
         font-size: 15px;
     }    
-}
+ */
 
 
 
 
 /* Tablet -> entre  768 y 1024 */ 
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
     header{
         display: flex;
         justify-content: space-between;
@@ -90,7 +90,7 @@ main{
         width: 50px;
         height: 50px;/* 
         margin: 25px; */
-    } 
+/*    } 
     
 
     #navbarSupportedContent ul{
@@ -109,11 +109,9 @@ main{
     #navbarSupportedContent ul li a{
         font-size: 30px;
     }
-}
-/* Desktop -> entre 1024 y 1200  */
-@media screen and (min-width: 1024) {
-        }    
-
+}  */
+/* Desktop -> entre 1024 y 1200  */  
+/* 
 #navbarSupportedContent ul li{
             position: relative;
             display: block;
@@ -127,10 +125,10 @@ main{
 
 #navbarSupportedContent li:hover > ul {
     display:block;
-}
+} */
 
 /* FUENTE PARA TITULO EN LA PAGINA PRINCIPAL */
-@media screen and (max-width:767px){
+/* @media screen and (max-width:767px){
     .titulo-2{
         display: flex;
         margin: 20px;
@@ -160,9 +158,9 @@ main{
         color: white;
         border-radius: 15px;
     }
-}
+} */
 /* --------------------------------------------------------------------------------- */
-.titulo{
+/* .titulo{
     display: flex;
     margin: 50px;
     font-size: calc(1.325rem + .9vw);
@@ -190,21 +188,22 @@ main{
     border-radius: 15px;
 }
 
-
+ */
 
 
 
 /* TODO EL ESTILO DEL MAIN INDEX */
 
 /* primer parte del inicio */
-#carouselExampleIndicators {
+/* #carouselExampleIndicators {
     width: 100%;
     height: 100%;
     padding: 10px;
-}
+} */
+
 
 /* SECCION INICIO/SERVICIOS */
-@media screen and (max-width:767px) {
+/* @media screen and (max-width:767px) {
     .contenedor-servicios{
         display: grid;
         grid-template-columns: 1fr;
@@ -286,9 +285,9 @@ main{
         justify-content: center;
         align-items: center;
     }
-}
+} */
 
-@media screen and (min-width:768px) and (max-width: 1199px) {
+/* @media screen and (min-width:768px) and (max-width: 1199px) {
     .contenedor-servicios{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -370,9 +369,9 @@ main{
         justify-content: center;
         align-items: center;
     }
-}
+} */
 
-@media screen and (min-width: 1200px) {
+/* @media screen and (min-width: 1200px) {
     .contenedor-servicios{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -455,15 +454,15 @@ main{
         align-items: center;
     }
 }
-
+ */
 /* CONFIGURACION DEL MAIN */
-main{
+/* main{
     flex-flow: wrap;
-}
+} */
 
 /* SECCION CATEGORIAS/PRODUCTOS DESTACADOS */
 
-.contenedor-destacados{
+/* .contenedor-destacados{
     display: flex;
     flex-flow: wrap;
     justify-content: space-evenly;
@@ -494,9 +493,9 @@ main{
     font-weight:700;
     color: black;
     padding: 5px;
-}
+} */
 /* TITULO PRODUCTOS DESTACADOS */
-@media screen and (max-width: 767px) {
+/* @media screen and (max-width: 767px) {
     .titulo-3{
         display: flex;
         margin: 10px;
@@ -528,11 +527,11 @@ main{
         font-size: calc(1.325rem + .9vw);
     }
     
-}
+} */
 
 /* SECCION PRODUCTOS/ CATEGORIAS  */
 
-@media screen and (max-width: 767px){
+/* @media screen and (max-width: 767px){
     .contenedor-categorias {
         display: grid;
         grid-template-columns: 1fr;
@@ -697,8 +696,8 @@ main{
         box-shadow: 22px 13px 31px 1px rgba(0,0,0,0.7);
         margin-bottom: 120px;
     }
-}
-@media screen and ( min-width: 768px) and ( max-width: 1999px) {
+} */
+/* @media screen and ( min-width: 768px) and ( max-width: 1999px) {
     .contenedor-categorias{
         display: grid;
         grid-template-columns: repeat(2,2fr);
@@ -862,8 +861,8 @@ main{
         box-shadow: 22px 13px 31px 1px rgba(0,0,0,0.7);
         margin-bottom: 120px;
     }
-}
-@media screen and (min-width: 1200px){
+} */
+/* @media screen and (min-width: 1200px){
     .contenedor-categorias {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -906,7 +905,7 @@ main{
         height: 100%;
         flex-wrap: wrap;
         box-shadow: 22px 13px 31px 1px rgba(0,0,0,0.7);
-        /* opacity: 0.7; */
+        
     }
     .contenedor-categorias .sector-3{
         background-image:url(./multimedia/carniceria.jpg),linear-gradient(to top, rgb(0 0 0 /.75) ,rgb(0 0 0 / .75));
@@ -919,7 +918,7 @@ main{
         height: 100%;
         flex-wrap: wrap;
         box-shadow: 22px 13px 31px 1px rgba(0,0,0,0.7);
-        /* opacity: 0.7; */
+        
     }
     .contenedor-categorias .sector-4{
         background-image:url(./multimedia/bebidas-alcoholicas.jpg.jpg);
@@ -932,7 +931,7 @@ main{
         height: 100%;
         flex-wrap: wrap;
         box-shadow: 22px 13px 31px 1px rgba(0,0,0,0.7);
-        /* opacity: 0.7; */
+    
     }
     .contenedor-categorias .sector-5{
         background-image:url(./multimedia/congelados.jpg);
@@ -945,7 +944,7 @@ main{
         height: 100%;
         flex-wrap: wrap;
         box-shadow: 22px 13px 31px 1px rgba(0,0,0,0.7);
-        /* opacity: 0.7; */
+
     }
     .contenedor-categorias .sector-6{
         background-image:url(./multimedia/fiambreria.jpg);
@@ -970,7 +969,7 @@ main{
         height: 100%;
         flex-wrap: wrap;
         box-shadow: 22px 13px 31px 1px rgba(0,0,0,0.7);
-        /* opacity: 0.7; */
+      
     }
     .contenedor-categorias .sector-8{
         background-image:url(./multimedia/limpieza.jpg.jpg);
@@ -983,7 +982,7 @@ main{
         height: 100%;
         flex-wrap: wrap;
         box-shadow: 22px 13px 31px 1px rgba(0,0,0,0.7);
-        /* opacity: 0.7; */
+       
     }
     .contenedor-categorias .sector-9{
         background-image:url(./multimedia/panaderia.jpg);
@@ -996,7 +995,7 @@ main{
         height: 100%;
         flex-wrap: wrap;
         box-shadow: 22px 13px 31px 1px rgba(0,0,0,0.7);
-        /* opacity: 0.7; */
+       
     }
     .contenedor-categorias .sector-10{
         background-image:url(./multimedia/sintacc.jpg);
@@ -1009,7 +1008,7 @@ main{
         height: 100%;
         flex-wrap: wrap;
         box-shadow: 22px 13px 31px 1px rgba(0,0,0,0.7);
-        /* opacity: 0.7; */
+        
     }
     .contenedor-categorias .sector-11{
         background-image:url(./multimedia/pastas.jpg);
@@ -1022,7 +1021,7 @@ main{
         height: 100%;
         flex-wrap: wrap;
         box-shadow: 22px 13px 31px 1px rgba(0,0,0,0.7);
-        /* opacity: 0.7; */
+        
     }
     .contenedor-categorias .sector-12{
         background-image:url(./multimedia/verduleria.jpg);
@@ -1035,12 +1034,12 @@ main{
         height: 100%;
         flex-wrap: wrap;
         box-shadow: 22px 13px 31px 1px rgba(0,0,0,0.7);
-        /* opacity: 0.7; */
+        
     }
-}
+} */
 
 /* SECCION CARRITO */
-
+/* 
 table{
     border-collapse: collapse;
     width:80%;
@@ -1055,12 +1054,12 @@ tr,th,td{
 
 .text-center{
     text-align:center;
-}
+} */
 
 /* SECCION CUENTA */
 
 /* Estilos del contenedor de la cuenta */
-.cuenta {
+/* .cuenta {
     background-color: #000000ce;
     color: white;
     padding: 20px;
@@ -1068,30 +1067,30 @@ tr,th,td{
     border-radius: 5px;
     width: 400px;
     margin: 20px auto;
-}
+} */
 
   /* Estilos del título de la cuenta */
-.cuenta h2 {
+/* .cuenta h2 {
     text-align: center;
     font-size: 28px;
     margin-bottom: 20px;
-}
+ */
 
 
 
   /* Estilos del formulario y sus elementos */
-.form-group {
+/* .form-group {
     margin-bottom: 20px;
-}
+} */
 
-.form-group label {
+/* .form-group label {
     display: block;
     font-size: 18px;
     margin-bottom: 10px;
     color: rgb(253, 253, 253);
-}
+} */
 
-.form-group input,
+/* .form-group input,
 .form-group select,
 .form-group textarea {
     width: 100%;
@@ -1100,9 +1099,9 @@ tr,th,td{
     border: 2px solid #b42525;
     border-radius: 10px;
     color: rgb(0, 0, 0);
-}
+} */
 
-.boton {
+/* .boton {
     width: 100%;
     padding: 12px;
     box-sizing: border-box;
@@ -1111,21 +1110,21 @@ tr,th,td{
     color: rgb(0, 0, 0);
     font-size: 18px;
     cursor: pointer;
-}
+} */
 
-button:hover {
+/* button:hover {
     background-color: #000000;
     color: white;
     text-decoration: none;
 }
-
+ */
 
 /* FOOTER ESTILO SACADO DE BOOSTRAP PERO EDITADO POR MI */
 
 
 
 
-section {
+/* section {
     width: 100%;
     display: inline-block;
     background: #333;
@@ -1152,14 +1151,11 @@ section {
       display: inline-block;
       vertical-align: top;
   }
-  
-  /* Footer left */
+
   
   .footer-distributed .footer-left{
       width: 40%;
   }
-  
-  /* The company logo */
   
   .footer-distributed h3{
       color:  #ffffff;
@@ -1171,7 +1167,7 @@ section {
       color:  lightseagreen;
   }
   
-  /* Footer links */
+
   
   .footer-distributed .footer-links{
       color:  #ffffff;
@@ -1193,8 +1189,7 @@ section {
       font-weight: normal;
       margin: 0;
   }
-  
-  /* Footer Center */
+
   
   .footer-distributed .footer-center{
       width: 35%;
@@ -1252,7 +1247,6 @@ section {
     content: none;
   }
   
-  /* Footer Right */
 
   
   .footer-distributed .footer-right{
@@ -1296,7 +1290,7 @@ section {
       margin-bottom: 5px;
   }
   
-  /* If you don't want the footer to be responsive, remove these media queries */
+  
   
   @media (max-width: 880px) {
   
@@ -1317,4 +1311,4 @@ section {
           margin-left: 0;
       }
   
-  }
+  } */
