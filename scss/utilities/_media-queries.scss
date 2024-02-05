@@ -1,0 +1,699 @@
+/* HEADER/ navbar  PARA MOVIL */
+/* Mobile -> emtre 320px y 768 px */
+
+@media screen and (max-width: 767px){
+    header{
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        background-color: black;    
+        color: white;
+        .navbar{
+            .container-fluid{
+                    .imagen-1{
+                        display: flex;
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 20%;
+                        flex-direction: column;
+                    }
+                        .d-flex{
+                            height: 40px;
+                            width: 225px;
+                        }
+                            .imagen-2 {
+                                width: 50px;
+                                height: 50px;
+                            }
+                            .navbar-toggler {
+                                .navbar-toggler-icon {
+                                    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.85)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+                                }
+                            }
+                            #navbarSupportedContent {
+                                ul {
+                                    flex-direction: column;
+                                    text-align: center;
+                                    justify-content: center;
+                                    li {
+                                        .nav-link {
+                                            color: white;
+                                            font-size: 15px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }                        
+/* FIN DEL HEADER/NAVBAR PARA MOBILE */
+
+/* INICIO DEL HEADER/NAVBAR PARA TABLET */
+/* Tablet -> entre  768 y 1024 */ 
+@media screen and (min-width: 768px) {
+	header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-direction: column;
+		background-color: black;
+		color: white;
+		width: 100%;
+		height: 100%;
+	}
+	.imagen-1 {
+		display: flex;
+		width: 100px;
+		height: 100px;
+		margin: 20px;
+		border-radius: 15%;
+	}
+	.d-flex {
+		height: 60px;
+		width: 550px;
+	}
+	.imagen-2 {
+		width: 50px;
+		height: 50px;
+	}
+	#navbarSupportedContent {
+		ul {
+			justify-content: space-between;
+			align-items: center;
+			flex-wrap: wrap;
+			li {
+				.nav-link {
+					color: white;
+					font-size: 30px;
+					align-items: center;
+					text-align: center;
+					margin-left: 35px;
+				}
+				a {
+					font-size: 30px;
+				}
+			}
+		}
+	}
+}
+
+/* FOOTER MEDIA QUERIES */
+
+@media (max-width: 880px) {
+	.footer-distributed {
+		font: bold 14px sans-serif;
+		.footer-left {
+			display: block;
+			width: 100%;
+			margin-bottom: 40px;
+			text-align: center;
+		}
+		.footer-center {
+			display: block;
+			width: 100%;
+			margin-bottom: 40px;
+			text-align: center;
+			i {
+				margin-left: 0;
+			}
+		}
+		.footer-right {
+			display: block;
+			width: 100%;
+			margin-bottom: 40px;
+			text-align: center;
+		}
+	}
+}
+
+/* FUENTE PARA TITULO EN LA PAGINA PRINCIPAL */
+    /* version mobile */
+    @media screen and (max-width:767px){
+    .titulo-2{
+        display: flex;
+        margin: 20px;
+        font-size: calc(1.325rem + .9vw);
+        padding: 5px;
+        font-family:'ABeeZee', sans-serif;  
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        background-color:#000000;
+        color: white;
+        border-radius: 15px;
+    }
+}
+
+    /* VERSION TABLET AND DESKTOP */
+    @media screen and (min-width:768px) {
+    .titulo-2{
+        display: flex;
+        margin: 50px;
+        font-size: calc(1.325rem + .9vw);
+        padding: 15px;
+        font-family:'ABeeZee', sans-serif;  
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        background-color:#000000;
+        color: white;
+        border-radius: 15px;
+    }
+}
+
+/* SECCION INICIO/SERVICIOS */
+
+    /* VERSION MOBILE */
+@media screen and (max-width:767px) {
+	.contenedor-servicios {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(3, 1fr);
+		height: 100%;
+		width: 100%;
+		align-content: center;
+		justify-content: center;
+		gap: 50px;
+		padding: 25px;
+		.servicio-1 {
+			background-image: url(../multimedia/tabla-fiambre.jpeg);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background-color: aliceblue;
+			background-size: cover;
+			box-shadow: 22px 13px 31px 1px rgba(0,0,0,0.7);
+			margin-bottom: .5rem;
+			text-align: center;
+			p {
+				color: white;
+				font-size: 1.3rem;
+				background-color: darkgray;
+				font-family: 'ABeeZee', sans-serif;
+				margin-bottom: 9rem;
+				margin-top: 9rem;
+				text-align: center;
+				justify-content: center;
+				align-items: center;
+			}
+		}
+		.servicio-2 {
+			background-image: url(../multimedia/carne-envasada.jpg);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background-color: aliceblue;
+			background-size: cover;
+			box-shadow: 22px 13px 31px 1px rgba(0,0,0,0.7);
+			margin-bottom: .5rem;
+			text-align: center;
+			p {
+				color: white;
+				font-size: 1.3rem;
+				background-color: darkgray;
+				font-family:'ABeeZee', sans-serif;
+				margin-bottom: 9rem;
+				margin-top: 9rem;
+				text-align: center;
+				justify-content: center;
+				align-items: center;
+			}
+		}
+		.servicio-3 {
+			background-image: url(../multimedia/envio-domicilio.jpg);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background-color: aliceblue;
+			background-size: cover;
+			box-shadow: 22px 13px 31px 1px rgba(0,0,0,0.7);
+			margin-bottom: .5rem;
+			text-align: center;
+			p {
+				color: white;
+				font-size: 1.5rem;
+				background-color: darkgray;
+				font-family:'ABeeZee', sans-serif;
+				margin-bottom: 9rem;
+				margin-top: 9rem;
+				text-align: center;
+				justify-content: center;
+				align-items: center;
+			}
+		}
+	}
+}
+
+    /* VERSION TABLET */
+    
+    @media screen and (min-width:768px) and (max-width: 1199px) {
+        .contenedor-servicios {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 1fr;
+            height: 100%;
+            width: 100%;
+            align-content: center;
+            justify-content: center;
+            gap: 50px;
+            padding: 55px;
+            .servicio-1 {
+                background-image: url(../multimedia/tabla-fiambre.jpeg);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: aliceblue;
+                background-size: cover;
+                box-shadow: 22px 13px 31px 1px rgba(0,0,0,0.7);
+                margin-bottom: .5rem;
+                text-align: center;
+                p {
+                    color: white;
+                    font-size: 1.3rem;
+                    background-color: darkgrey;
+                    font-family: 'ABeeZee', sans-serif;
+                    margin-bottom: 9rem;
+                    margin-top: 9rem;
+                    text-align: center;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+            .servicio-2 {
+                background-image: url(../multimedia/carne-envasada.jpg);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: aliceblue;
+                background-size: cover;
+                box-shadow: 22px 13px 31px 1px rgba(0,0,0,0.7);
+                margin-bottom: .5rem;
+                text-align: center;
+                p {
+                    color: white;
+                    font-size: 1.3rem;
+                    background-color: darkgrey;
+                    font-family:'ABeeZee', sans-serif;
+                    margin-bottom: 9rem;
+                    margin-top: 9rem;
+                    text-align: center;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+            .servicio-3 {
+                background-image: url(../multimedia/envio-domicilio.jpg);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: aliceblue;
+                background-size: cover;
+                box-shadow: 22px 13px 31px 1px rgba(0,0,0,0.7);
+                margin-bottom: .5rem;
+                text-align: center;
+                p {
+                    color: white;
+                    font-size: 1.3rem;
+                    background-color: darkgrey;
+                    font-family: 'ABeeZee', sans-serif;
+                    margin-bottom: 9rem;
+                    margin-top: 9rem;
+                    text-align: center;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+    }
+
+    /* TITULO PRODUCTOS DESTACADOS */
+        /* version mobile */
+    @media screen and (max-width: 767px) {
+        .titulo-3{
+            display: flex;
+            margin: 10px;
+            padding: 5px;
+            font-family:'ABeeZee', sans-serif;  
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            background-color:#000000;
+            color: white;
+            border-radius: 15px;
+            font-size: calc(1.325rem + .9vw);
+        }
+        
+    }
+    /* VERSION TABLET */
+    @media screen and (min-width:768px){
+        .titulo-3{
+            display: flex;
+            margin: 20px;
+            padding: 15px;
+            font-family:'ABeeZee', sans-serif;  
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            background-color:#000000;
+            color: white;
+            border-radius: 15px;
+            font-size: calc(1.325rem + .9vw);
+        }
+        
+    }
+
+
+/* SECCION CATEGORIAS/ PRODUCTOS DESTACADOS/ CATEGORIAS  */
+    /* VERSION MOBILE */
+
+@media screen and (max-width: 767px) {
+	.contenedor-categorias {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(12, 1fr);
+		gap: 1rem;
+		justify-items: center;
+		gap: 15px;
+		padding: 55px;
+		align-content: center;
+		width: 100%;
+		height: 100%;
+		.enlace {
+			color: rgb(255, 255, 255);
+			font-size: 40px;
+			text-decoration: none;
+			background-color: rgb(63, 55, 55);
+		}
+		.sector-1 {
+			background-image: url(../multimedia/almacen.jpg);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background-color: aliceblue;
+			background-size: cover;
+			width: 100%;
+			height: 100%;
+			box-shadow: 22px 13px 31px 1px rgba(0,0,0,0.7);
+			margin-bottom: 120px;
+		}
+		.sector-2 {
+			background-image: url(../multimedia/bebidas.jpg), linear-gradient(to top, rgb(0 0 0 /.75) ,rgb(0 0 0 / .75));
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background-color: aliceblue;
+			background-size: cover;
+			width: 100%;
+			height: 100%;
+			box-shadow: 22px 13px 31px 1px rgba(0,0,0,0.7);
+			margin-bottom: 120px;
+		}
+		.sector-3 {
+			background-image: url(../multimedia/carniceria.jpg),linear-gradient(to top, rgb(0 0 0 /.75) ,rgb(0 0 0 / .75));
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background-color: aliceblue;
+			background-size: cover;
+			width: 100%;
+			height: 100%;
+			box-shadow: 22px 13px 31px 1px rgba(0,0,0,0.7);
+			margin-bottom: 120px;
+		}
+		.sector-4 {
+			background-image: url(../multimedia/bebidas-alcoholicas.jpg.jpg);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background-color: aliceblue;
+			background-size: cover;
+			width: 100%;
+			height: 100%;
+			box-shadow: 22px 13px 31px 1px rgba(0,0,0,0.7);
+			margin-bottom: 120px;
+		}
+		.sector-5 {
+			background-image: url(../multimedia/congelados.jpg);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background-color: aliceblue;
+			background-size: cover;
+			width: 100%;
+			height: 100%;
+			box-shadow: 22px 13px 31px 1px rgba(0,0,0,0.7);
+			margin-bottom: 120px;
+		}
+		.sector-6 {
+			background-image: url(../multimedia/fiambreria.jpg);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background-color: aliceblue;
+			background-size: cover;
+			width: 100%;
+			height: 100%;
+			box-shadow: 22px 13px 31px 1px rgba(0,0,0,0.7);
+			margin-bottom: 120px;
+		}
+		.sector-7 {
+			background-image: url(../multimedia/lacteos.jpg);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background-color: aliceblue;
+			background-size: cover;
+			width: 100%;
+			height: 100%;
+			box-shadow: 22px 13px 31px 1px rgba(0,0,0,0.7);
+			margin-bottom: 120px;
+		}
+		.sector-8 {
+			background-image: url(../multimedia/limpieza.jpg.jpg);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background-color: aliceblue;
+			background-size: cover;
+			width: 100%;
+			height: 100%;
+			box-shadow: 22px 13px 31px 1px rgba(0,0,0,0.7);
+			margin-bottom: 120px;
+		}
+		.sector-9 {
+			background-image: url(../multimedia/panaderia.jpg);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background-color: aliceblue;
+			background-size: cover;
+			width: 100%;
+			height: 100%;
+			box-shadow: 22px 13px 31px 1px rgba(0,0,0,0.7);
+			margin-bottom: 120px;
+		}
+		.sector-10 {
+			background-image: url(../multimedia/sintacc.jpg);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background-color: aliceblue;
+			background-size: cover;
+			width: 100%;
+			height: 100%;
+			box-shadow: 22px 13px 31px 1px rgba(0,0,0,0.7);
+			margin-bottom: 120px;
+		}
+		.sector-11 {
+			background-image: url(../multimedia/pastas.jpg);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background-color: aliceblue;
+			background-size: cover;
+			width: 100%;
+			height: 100%;
+			box-shadow: 22px 13px 31px 1px rgba(0,0,0,0.7);
+			margin-bottom: 120px;
+		}
+		.sector-12 {
+			background-image: url(../multimedia/verduleria.jpg);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background-color: aliceblue;
+			background-size: cover;
+			width: 100%;
+			height: 100%;
+			box-shadow: 22px 13px 31px 1px rgba(0,0,0,0.7);
+			margin-bottom: 120px;
+		}
+	}
+}
+
+    /* VERSION TABLET */
+    
+@media screen and ( min-width: 768px) and ( max-width: 1199px) {
+        .contenedor-categorias {
+            display: grid;
+            grid-template-columns: repeat(2,2fr);
+            grid-template-rows: repeat(2, 20vh);
+            justify-items: center;
+            gap: 15px;
+            padding: 55px;
+            align-content: center;
+            width: 100%;
+            height: 100%;
+            .enlace {
+                color: rgb(255, 255, 255);
+                font-size: 40px;
+                text-decoration: none;
+                background-color: rgb(63, 55, 55);
+            }
+            .sector-1 {
+                background-image: url(../multimedia/almacen.jpg);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: aliceblue;
+                background-size: cover;
+                width: 100%;
+                height: 100%;
+                box-shadow: 22px 13px 31px 1px rgba(0,0,0,0.7);
+                margin-bottom: 120px;
+            }
+            .sector-2 {
+                background-image: url(../multimedia/bebidas.jpg), linear-gradient(to top, rgb(0 0 0 /.75) ,rgb(0 0 0 / .75));
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: aliceblue;
+                background-size: cover;
+                width: 100%;
+                height: 100%;
+                box-shadow: 22px 13px 31px 1px rgba(0,0,0,0.7);
+                margin-bottom: 120px;
+            }
+            .sector-3 {
+                background-image: url(../multimedia/carniceria.jpg),linear-gradient(to top, rgb(0 0 0 /.75) ,rgb(0 0 0 / .75));
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: aliceblue;
+                background-size: cover;
+                width: 100%;
+                height: 100%;
+                box-shadow: 22px 13px 31px 1px rgba(0,0,0,0.7);
+                margin-bottom: 120px;
+            }
+            .sector-4 {
+                background-image: url(../multimedia/bebidas-alcoholicas.jpg.jpg);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: aliceblue;
+                background-size: cover;
+                width: 100%;
+                height: 100%;
+                box-shadow: 22px 13px 31px 1px rgba(0,0,0,0.7);
+                margin-bottom: 120px;
+            }
+            .sector-5 {
+                background-image: url(../multimedia/congelados.jpg);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: aliceblue;
+                background-size: cover;
+                width: 100%;
+                height: 100%;
+                box-shadow: 22px 13px 31px 1px rgba(0,0,0,0.7);
+                margin-bottom: 120px;
+            }
+            .sector-6 {
+                background-image: url(../multimedia/fiambreria.jpg);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: aliceblue;
+                background-size: cover;
+                width: 100%;
+                height: 100%;
+                box-shadow: 22px 13px 31px 1px rgba(0,0,0,0.7);
+                margin-bottom: 120px;
+            }
+            .sector-7 {
+                background-image: url(../multimedia/lacteos.jpg);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: aliceblue;
+                background-size: cover;
+                width: 100%;
+                height: 100%;
+                box-shadow: 22px 13px 31px 1px rgba(0,0,0,0.7);
+                margin-bottom: 120px;
+            }
+            .sector-8 {
+                background-image: url(../multimedia/limpieza.jpg.jpg);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: aliceblue;
+                background-size: cover;
+                width: 100%;
+                height: 100%;
+                box-shadow: 22px 13px 31px 1px rgba(0,0,0,0.7);
+                margin-bottom: 120px;
+            }
+            .sector-9 {
+                background-image: url(../multimedia/panaderia.jpg);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: aliceblue;
+                background-size: cover;
+                width: 100%;
+                height: 100%;
+                box-shadow: 22px 13px 31px 1px rgba(0,0,0,0.7);
+                margin-bottom: 120px;
+            }
+            .sector-10 {
+                background-image: url(../multimedia/sintacc.jpg);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: aliceblue;
+                background-size: cover;
+                width: 100%;
+                height: 100%;
+                box-shadow: 22px 13px 31px 1px rgba(0,0,0,0.7);
+                margin-bottom: 120px;
+            }
+            .sector-11 {
+                background-image: url(../multimedia/pastas.jpg);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: aliceblue;
+                background-size: cover;
+                width: 100%;
+                height: 100%;
+                box-shadow: 22px 13px 31px 1px rgba(0,0,0,0.7);
+                margin-bottom: 120px;
+            }
+            .sector-12 {
+                background-image: url(../multimedia/verduleria.jpg);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: aliceblue;
+                background-size: cover;
+                width: 100%;
+                height: 100%;
+                box-shadow: 22px 13px 31px 1px rgba(0,0,0,0.7);
+                margin-bottom: 120px;
+            }
+        }
+}

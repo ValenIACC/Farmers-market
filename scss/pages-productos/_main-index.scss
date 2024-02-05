@@ -1,0 +1,89 @@
+/* TODO EL ESTILO DEL MAIN INDEX */
+/* primer parte del inicio */
+#carouselExampleIndicators {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+
+/* SECCION INICIO/SERVICIOS */
+
+@media screen and (min-width: 1200px) {
+	.contenedor-servicios {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: 1fr;
+		height: 100%;
+		width: 100%;
+		align-content: center;
+		justify-content: center;
+		gap: 50px;
+		padding: 55px;
+		.servicio-1 {
+			background-image: url(../multimedia/tabla-fiambre.jpeg);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background-color: aliceblue;
+			background-size: cover;
+			box-shadow: 22px 13px 31px 1px rgba(0,0,0,0.7);
+			margin-bottom: .5rem;
+			text-align: center;
+			p {
+				color: white;
+				font-size: 2rem;
+				background-color: darkgrey;
+				font-family: 'ABeeZee', sans-serif;
+				margin-bottom: 9rem;
+				margin-top: 9rem;
+				text-align: center;
+				justify-content: center;
+				align-items: center;
+			}
+		}
+		.servicio-2 {
+			background-image: url(../multimedia/carne-envasada.jpg);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background-color: aliceblue;
+			background-size: cover;
+			box-shadow: 22px 13px 31px 1px rgba(0,0,0,0.7);
+			margin-bottom: .5rem;
+			text-align: center;
+			p {
+				color: white;
+				font-size: 2rem;
+				background-color: darkgrey;
+				font-family: 'ABeeZee', sans-serif;
+				margin-bottom: 9rem;
+				margin-top: 9rem;
+				text-align: center;
+				justify-content: center;
+				align-items: center;
+			}
+		}
+		.servicio-3 {
+			background-image: url(../multimedia/envio-domicilio.jpg);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background-color: aliceblue;
+			background-size: cover;
+			box-shadow: 22px 13px 31px 1px rgba(0,0,0,0.7);
+			margin-bottom: .5rem;
+			text-align: center;
+			p {
+				color: white;
+				font-size: 2.3rem;
+				background-color: darkgrey;
+				font-family: 'ABeeZee', sans-serif;
+				margin-bottom: 9rem;
+				margin-top: 9rem;
+				text-align: center;
+				justify-content: center;
+				align-items: center;
+			}
+		}
+	}
+}
