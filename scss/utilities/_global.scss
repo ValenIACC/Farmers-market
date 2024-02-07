@@ -9,12 +9,12 @@ main{
     margin: 50px;
     font-size: calc(1.325rem + .9vw);
     padding: 15px;
-    font-family:'ABeeZee', sans-serif;  
+    font-family:$font_1;  
     text-align: center;
     justify-content: center;
     align-items: center;
-    background-color:#000000;
-    color: white;
+    background-color:$background-principal;
+    color: $color-principal;
     border-radius: 15px;
 }
 
@@ -23,12 +23,12 @@ main{
     margin: 30px;
     font-size: calc(1.325rem + .9vw);
     padding: 15px;
-    font-family:'ABeeZee', sans-serif;  
+    font-family:$font_1;  
     text-align: center;
     justify-content: center;
     align-items: center;
-    background-color:#cec5c5;
-    color: rgb(12, 12, 12);
+    background-color:rgb(206, 197, 197);
+    color: $background-principal;
     border-radius: 15px;
 }
 

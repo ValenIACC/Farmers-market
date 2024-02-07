@@ -1,0 +1,83 @@
+//mixing creado para la seccion "PRODUCTOS DESTACADOS"
+//SECTORES/CATEGORIAS
+
+@mixin sectores(){
+    display: flex;
+    align-items: center;
+	justify-content: center;
+	background-color: $color_8;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	flex-wrap: wrap;
+	box-shadow: 22px 13px 31px 1px rgba(0,0,0,0.7);
+}
+
+@mixin categorias-contenedor(){
+    display: grid;
+    justify-items: center;
+    gap: 15px;
+    padding: 55px;
+    align-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+@mixin enlace(){
+    color: $color-principal;
+    font-size: 40px;
+    text-decoration: none;
+    background-color: $color_10;
+}
+
+
+@mixin servicio-contenedor($column, $row, $padding){
+    display: grid;
+    grid-template-columns: $column;
+    grid-template-rows: $row;
+    height: 100%;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+    gap: 50px;
+    padding: $padding;
+}
+
+@mixin servicio(){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $color_8;
+    background-size: cover;
+    box-shadow: 22px 13px 31px 1px rgba(0,0,0,0.7);
+    margin-bottom: .5rem;
+    text-align: center;
+}
+
+@mixin servicio-p($font-size){
+    color: $color-principal;
+    font-size: $font-size;
+    background-color: $color_9;
+    font-family: $font_1;
+    margin-bottom: 9rem;
+    margin-top: 9rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin header(){
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+	background-color: BLACK;
+	color: white;
+	width: 100%;
+	height: 100%;
+}
+
+@mixin tamaño($height, $width){
+    height: $height;
+	width: $width;
+}

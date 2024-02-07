@@ -1,13 +1,7 @@
-header {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	flex-direction: column;
-	background-color: black;
-	color: white;
-	width: 100%;
-	height: 100%;
-	}
+header{
+	@include header();
+}
+
 	.imagen-1 {
 		display: flex;
 		width: 100px;
@@ -16,12 +10,10 @@ header {
 		border-radius: 15%;
 	}
 	.d-flex {
-		height: 60px;
-		width: 550px;
+        @include tamaño(60px, 550px);
 	}
 	.imagen-2 {
-		width: 50px;
-		height: 50px;
+        @include tamaño(50px, 50px);
 	}
 	#navbarSupportedContent {
 		ul {
@@ -30,7 +22,7 @@ header {
 			flex-wrap: wrap;
 			li {
 				.nav-link {
-					color: white;
+					color: $color-principal;
 					font-size: 30px;
 					align-items: center;
 					text-align: center;
