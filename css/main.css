@@ -1,175 +1,4 @@
 @charset "UTF-8";
-main .wrapper {
-  width: 300px;
-  height: 500px;
-  background: white;
-  margin: auto;
-  position: relative;
-  overflow: hidden;
-  border-radius: 10px 10px 10px 10px;
-  box-shadow: 0;
-  transform: scale(0.95);
-  transition: box-shadow 0.5s, transform 0.5s;
-}
-main .wrapper:hover {
-  transform: scale(1);
-  box-shadow: 5px 20px 30px rgba(0, 0, 0, 0.2);
-}
-main .wrapper .container {
-  width: 100%;
-  height: 100%;
-}
-main .wrapper .container .bottom {
-  width: 200%;
-  height: 20%;
-  transition: transform 0.5s;
-}
-main .wrapper .container .bottom.clicked {
-  transform: translateX(-50%);
-}
-main .wrapper .container .bottom h1 {
-  margin: 0;
-  padding: 0;
-}
-main .wrapper .container .bottom p {
-  margin: 0;
-  padding: 0;
-}
-main .wrapper .container .bottom .left {
-  height: 100%;
-  width: 50%;
-  background: #f7f7f7;
-  position: relative;
-  float: left;
-}
-main .wrapper .container .bottom .left .details {
-  padding: 20px;
-  float: left;
-  width: calc(70% - 40px);
-}
-main .wrapper .container .bottom .left .buy {
-  float: right;
-  width: calc(30% - 2px);
-  height: 100%;
-  background: rgba(255, 255, 255, 0.4431372549);
-  transition: background 0.5s;
-  border-left: solid thin rgba(0, 0, 0, 0);
-}
-main .wrapper .container .bottom .left .buy i {
-  font-size: 30px;
-  padding: 30px;
-  color: #254053;
-  transition: transform 0.5s;
-}
-main .wrapper .container .bottom .left .buy:hover {
-  background: #000000;
-}
-main .wrapper .container .bottom .left .buy:hover i {
-  transform: translateY(5px);
-  color: #ffffff;
-}
-main .wrapper .container .bottom .right {
-  width: 50%;
-  background: #ffffff;
-  color: white;
-  float: right;
-  height: 200%;
-  overflow: hidden;
-}
-main .wrapper .container .bottom .right .details {
-  padding: 20px;
-  float: right;
-  width: calc(70% - 40px);
-}
-main .wrapper .container .bottom .right .done {
-  width: calc(30% - 2px);
-  float: left;
-  transition: transform 0.5s;
-  border-right: solid thin rgba(179, 50, 50, 0.3);
-  height: 50%;
-}
-main .wrapper .container .bottom .right .done i {
-  font-size: 30px;
-  padding: 30px;
-  color: rgb(255, 9, 9);
-}
-main .wrapper .container .bottom .right .remove {
-  width: calc(30% - 1px);
-  clear: both;
-  border-right: solid thin rgba(0, 0, 0, 0.3);
-  height: 50%;
-  background: #BC3B59;
-  transition: transform 0.5s, background 0.5s;
-}
-main .wrapper .container .bottom .right .remove:hover {
-  background: #9B2847;
-}
-main .wrapper .container .bottom .right .remove:hover i {
-  transform: translateY(5px);
-}
-main .wrapper .container .bottom .right .remove i {
-  transition: transform 0.5s;
-  font-size: 30px;
-  padding: 30px;
-  color: white;
-}
-main .wrapper .container .bottom .right:hover .remove, main .wrapper .container .bottom .right:hover .done {
-  transform: translateY(-100%);
-}
-main .wrapper .inside {
-  z-index: 9;
-  background: rgba(0, 0, 0, 0.7725490196);
-  width: 140px;
-  height: 140px;
-  position: absolute;
-  top: -185px;
-  right: 0px;
-  border-radius: 0px 0px 200px 200px;
-  transition: all 0.5s, border-radius 2s, top 1s;
-  overflow: hidden;
-}
-main .wrapper .inside .icon {
-  position: absolute;
-  right: 85px;
-  top: 85px;
-  color: white;
-  opacity: 1;
-}
-main .wrapper .inside:hover {
-  width: 100%;
-  right: 0;
-  top: 0;
-  border-radius: 0;
-  height: 80%;
-}
-main .wrapper .inside:hover .icon {
-  opacity: 0;
-  right: 15px;
-  top: 15px;
-}
-main .wrapper .inside:hover .contents {
-  opacity: 1;
-  transform: scale(1);
-  transform: translateY(0);
-}
-main .wrapper .inside .contents {
-  padding: 5%;
-  opacity: 0;
-  transform: scale(0.5);
-  transform: translateY(-200%);
-  transition: opacity 0.2s, transform 0.8s;
-}
-main .wrapper .inside .contents table {
-  text-align: left;
-  width: 100%;
-}
-main .wrapper .inside .contents h1, main .wrapper .inside .contents p, main .wrapper .inside .contents table {
-  color: white;
-}
-main .wrapper .inside .contents p {
-  font-size: 13px;
-}
-
 /* reset */
 * {
   margin: 0;
@@ -269,175 +98,153 @@ main {
   border-radius: 15px;
 }
 
-main .wrapper {
-  width: 300px;
-  height: 500px;
-  background: white;
-  margin: auto;
-  position: relative;
+.content-box-wrapper .content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 350px);
+  grid-template-rows: 1fr;
+  grid-gap: 1em;
+}
+.content-box-wrapper .box-wrapper {
+  display: flex;
+  flex-flow: wrap;
+  background-color: #ca4040;
   overflow: hidden;
-  border-radius: 10px 10px 10px 10px;
-  box-shadow: 0;
-  transform: scale(0.95);
-  transition: box-shadow 0.5s, transform 0.5s;
+  max-width: 320px;
+  box-shadow: 0px 5px 43px rgba(0, 0, 0, 0.2);
+  margin: 20px;
+  text-align: center;
+  border-radius: 20px;
+  cursor: pointer;
+  transition-duration: 0.5s;
 }
-main .wrapper:hover {
-  transform: scale(1);
-  box-shadow: 5px 20px 30px rgba(0, 0, 0, 0.2);
+.content-box-wrapper .box-wrapper:hover {
+  box-shadow: 0px 5px 70px rgba(255, 0, 0, 0.4);
 }
-main .wrapper .container {
-  width: 100%;
-  height: 100%;
+.content-box-wrapper img {
+  max-width: 100%;
 }
-main .wrapper .container .bottom {
+.content-box-wrapper .success {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 37%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  z-index: 999;
+}
+.expanded .content-box-wrapper .success {
+  opacity: 1;
+  transition: opacity 0.3s 0.6s;
+}
+.content-box-wrapper .success:before, .content-box-wrapper .success:after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: #fff;
+}
+.content-box-wrapper .success:before {
+  width: 40px;
+  height: 20px;
+  transform: rotate(45deg);
+}
+.content-box-wrapper .success:after {
+  width: 88px;
+  height: 20px;
+  transform: rotate(-45deg);
+  top: -16px;
+  left: 8px;
+}
+.content-box-wrapper .title {
+  font-size: 2em;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin: 0;
+  font-family: "Acme", sans-serif;
+}
+.content-box-wrapper .desc {
+  font-family: "Satisfy", cursive;
+  font-size: 1.2em;
+  color: white;
+}
+.content-box-wrapper .box-content {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+}
+.content-box-wrapper .box-content:before {
+  content: "";
   width: 200%;
-  height: 20%;
-  transition: transform 0.5s;
+  height: 100px;
+  position: absolute;
+  display: block;
+  background-color: #ca4040;
+  transform: rotate(-8deg);
+  top: -50px;
+  left: -10%;
+  z-index: -1;
 }
-main .wrapper .container .bottom.clicked {
-  transform: translateX(-50%);
+.content-box-wrapper .box-content .buy {
+  display: block;
+  top: -80px;
+  right: 30px;
+  z-index: 2;
+  width: 70px;
+  height: 70px;
+  position: absolute;
 }
-main .wrapper .container .bottom h1 {
-  margin: 0;
-  padding: 0;
+.content-box-wrapper .box-content .buy span {
+  width: 70px;
+  height: 70px;
+  background-color: rgba(22, 20, 20, 0.767);
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  font-size: 36px;
+  color: #fff;
+  transition: all 0.3s ease;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
 }
-main .wrapper .container .bottom p {
-  margin: 0;
-  padding: 0;
+.content-box-wrapper .box-content .buy span i {
+  padding: 15px;
 }
-main .wrapper .container .bottom .left {
-  height: 100%;
-  width: 50%;
-  background: #f7f7f7;
+.expanded .content-box-wrapper .box-content .buy span {
+  width: 750px;
+  height: 750px;
+}
+.expanded .content-box-wrapper .box-content .buy span i {
+  display: none;
+}
+.content-box-wrapper .box-content .price {
+  color: rgb(255, 255, 255);
+  font-size: 2em;
+  font-weight: 900;
+  display: block;
+  width: 100px;
+  margin: 20px auto 0;
   position: relative;
-  float: left;
+  font-family: "Satisfy", cursive;
 }
-main .wrapper .container .bottom .left .details {
-  padding: 20px;
-  float: left;
-  width: calc(70% - 40px);
-}
-main .wrapper .container .bottom .left .buy {
-  float: right;
-  width: calc(30% - 2px);
-  height: 100%;
-  background: rgba(255, 255, 255, 0.4431372549);
-  transition: background 0.5s;
-  border-left: solid thin rgba(0, 0, 0, 0);
-}
-main .wrapper .container .bottom .left .buy i {
-  font-size: 30px;
-  padding: 30px;
-  color: #254053;
-  transition: transform 0.5s;
-}
-main .wrapper .container .bottom .left .buy:hover {
-  background: #000000;
-}
-main .wrapper .container .bottom .left .buy:hover i {
-  transform: translateY(5px);
-  color: #ffffff;
-}
-main .wrapper .container .bottom .right {
-  width: 50%;
-  background: #ffffff;
-  color: white;
-  float: right;
-  height: 200%;
-  overflow: hidden;
-}
-main .wrapper .container .bottom .right .details {
-  padding: 20px;
-  float: right;
-  width: calc(70% - 40px);
-}
-main .wrapper .container .bottom .right .done {
-  width: calc(30% - 2px);
-  float: left;
-  transition: transform 0.5s;
-  border-right: solid thin rgba(179, 50, 50, 0.3);
-  height: 50%;
-}
-main .wrapper .container .bottom .right .done i {
-  font-size: 30px;
-  padding: 30px;
-  color: rgb(255, 9, 9);
-}
-main .wrapper .container .bottom .right .remove {
-  width: calc(30% - 1px);
-  clear: both;
-  border-right: solid thin rgba(0, 0, 0, 0.3);
-  height: 50%;
-  background: #BC3B59;
-  transition: transform 0.5s, background 0.5s;
-}
-main .wrapper .container .bottom .right .remove:hover {
-  background: #9B2847;
-}
-main .wrapper .container .bottom .right .remove:hover i {
-  transform: translateY(5px);
-}
-main .wrapper .container .bottom .right .remove i {
-  transition: transform 0.5s;
-  font-size: 30px;
-  padding: 30px;
-  color: white;
-}
-main .wrapper .container .bottom .right:hover .remove, main .wrapper .container .bottom .right:hover .done {
-  transform: translateY(-100%);
-}
-main .wrapper .inside {
-  z-index: 9;
-  background: rgba(0, 0, 0, 0.7725490196);
-  width: 140px;
-  height: 140px;
+.content-box-wrapper .box-content .price:after, .content-box-wrapper .box-content .price:before {
+  content: "";
+  height: 1px;
+  width: 50px;
+  display: block;
   position: absolute;
-  top: -185px;
-  right: 0px;
-  border-radius: 0px 0px 200px 200px;
-  transition: all 0.5s, border-radius 2s, top 1s;
-  overflow: hidden;
+  background-color: #ddd;
+  top: 18px;
 }
-main .wrapper .inside .icon {
-  position: absolute;
-  right: 85px;
-  top: 85px;
-  color: white;
-  opacity: 1;
+.content-box-wrapper .box-content .price:before {
+  left: -50px;
 }
-main .wrapper .inside:hover {
-  width: 100%;
-  right: 0;
-  top: 0;
-  border-radius: 0;
-  height: 80%;
+.content-box-wrapper .box-content .price:after {
+  right: -50px;
 }
-main .wrapper .inside:hover .icon {
-  opacity: 0;
-  right: 15px;
-  top: 15px;
-}
-main .wrapper .inside:hover .contents {
-  opacity: 1;
-  transform: scale(1);
-  transform: translateY(0);
-}
-main .wrapper .inside .contents {
-  padding: 5%;
-  opacity: 0;
-  transform: scale(0.5);
-  transform: translateY(-200%);
-  transition: opacity 0.2s, transform 0.8s;
-}
-main .wrapper .inside .contents table {
-  text-align: left;
-  width: 100%;
-}
-main .wrapper .inside .contents h1, main .wrapper .inside .contents p, main .wrapper .inside .contents table {
-  color: white;
-}
-main .wrapper .inside .contents p {
-  font-size: 13px;
+.content-box-wrapper .box-content .footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 1em 0;
 }
 
 /* TODO EL ESTILO DEL MAIN INDEX */
@@ -542,7 +349,7 @@ main .wrapper .inside .contents p {
   gap: 15px;
   margin: 8px;
 }
-.contenedor-destacados .card, .contenedor-destacados main {
+.contenedor-destacados .card {
   width: 300px;
   background-color: white;
   border-radius: 90px, 50px;
@@ -841,11 +648,40 @@ button:hover {
   text-decoration: none;
 }
 
-main .imagen-productos {
-  height: 100%;
-  width: 100%;
-  background-size: 100%;
-  justify-content: center;
+.almacen {
+  background-image: url("../multimedia/almacen.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  text-align: center;
+  padding: 80px;
+  background-color: black;
+  margin: 20px;
+  color: rgb(255, 255, 255);
+  border-radius: 20px;
+}
+.almacen span {
+  background-color: rgba(202, 64, 64, 0.7450980392);
+  padding: 5px;
+  border-radius: 15px;
+}
+
+.bebidas {
+  background-image: url("../multimedia/bebidas.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  text-align: center;
+  padding: 80px;
+  background-color: black;
+  margin: 20px;
+  color: rgb(255, 255, 255);
+  border-radius: 20px;
+}
+.bebidas span {
+  background-color: rgba(202, 64, 64, 0.7450980392);
+  padding: 5px;
+  border-radius: 15px;
 }
 
 /* FOOTER */
