@@ -8,14 +8,16 @@
 		display: flex;
         flex-flow: wrap;
         justify-content: space-evenly;
-        gap: 15px;
+        gap: 5px;
         margin: 8px;
+		font-size: 10PX;
         .card {
             width: 300px;
             background-color: $color-principal;
             border-radius: 90px, 50px;
             overflow: hidden;
             box-shadow: 22px 13px 31px 1px rgba(0,0,0,0.7);
+			font-size: 15px;
         }
     }
     .card-texto {
@@ -48,11 +50,7 @@
     border-radius: 15px;
     font-size: calc(1.325rem + .9vw);
 }
-
-
 /* SECCION CATEGORIAS/ PRODUCTOS DESTACADOS/ CATEGORIAS */
-
-
 .contenedor-categorias {
         @include categorias-contenedor();
 		grid-template-columns: repeat(3, 1fr);

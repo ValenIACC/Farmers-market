@@ -100,9 +100,11 @@ main {
 
 .content-box-wrapper .content {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 350px);
+  grid-template-columns: repeat(auto-fit, 250px);
   grid-template-rows: 1fr;
   grid-gap: 1em;
+  justify-content: center;
+  align-items: center;
 }
 .content-box-wrapper .box-wrapper {
   display: flex;
@@ -155,7 +157,7 @@ main {
   left: 8px;
 }
 .content-box-wrapper .title {
-  font-size: 2em;
+  font-size: 1.2em;
   font-weight: 900;
   text-transform: uppercase;
   margin: 0;
@@ -163,7 +165,7 @@ main {
 }
 .content-box-wrapper .desc {
   font-family: "Satisfy", cursive;
-  font-size: 1.2em;
+  font-size: 1em;
   color: white;
 }
 .content-box-wrapper .box-content {
@@ -199,7 +201,7 @@ main {
   display: block;
   border-radius: 50%;
   position: absolute;
-  font-size: 36px;
+  font-size: 30px;
   color: #fff;
   transition: all 0.3s ease;
   transform: translate(-50%, -50%);
@@ -218,7 +220,7 @@ main {
 }
 .content-box-wrapper .box-content .price {
   color: rgb(255, 255, 255);
-  font-size: 2em;
+  font-size: 1.5em;
   font-weight: 900;
   display: block;
   width: 100px;
@@ -266,7 +268,7 @@ main {
     align-content: center;
     justify-content: center;
     gap: 50px;
-    padding: 55px;
+    padding: 30px;
   }
   .contenedor-servicios .servicio-1 {
     background-image: url(../multimedia/tabla-fiambre.jpeg);
@@ -281,7 +283,7 @@ main {
   }
   .contenedor-servicios .servicio-1 p {
     color: white;
-    font-size: 2rem;
+    font-size: 1.3rem;
     background-color: darkgrey;
     font-family: "ABeeZee", sans-serif;
     margin-bottom: 9rem;
@@ -303,7 +305,7 @@ main {
   }
   .contenedor-servicios .servicio-2 p {
     color: white;
-    font-size: 2rem;
+    font-size: 1.3rem;
     background-color: darkgrey;
     font-family: "ABeeZee", sans-serif;
     margin-bottom: 9rem;
@@ -325,7 +327,7 @@ main {
   }
   .contenedor-servicios .servicio-3 p {
     color: white;
-    font-size: 2.3rem;
+    font-size: 1.3rem;
     background-color: darkgrey;
     font-family: "ABeeZee", sans-serif;
     margin-bottom: 9rem;
@@ -346,8 +348,9 @@ main {
   display: flex;
   flex-flow: wrap;
   justify-content: space-evenly;
-  gap: 15px;
+  gap: 5px;
   margin: 8px;
+  font-size: 10PX;
 }
 .contenedor-destacados .card {
   width: 300px;
@@ -355,6 +358,7 @@ main {
   border-radius: 90px, 50px;
   overflow: hidden;
   box-shadow: 22px 13px 31px 1px rgba(0, 0, 0, 0.7);
+  font-size: 15px;
 }
 
 .card-texto {
@@ -666,6 +670,25 @@ button:hover {
   border-radius: 15px;
 }
 
+.content-box-wrapper .boton-2 {
+  text-align: center;
+  background-color: rgba(202, 64, 64, 0.7450980392);
+  width: 100%;
+  height: 100%;
+  font-size: 1%;
+  color: white;
+  border-top: 0.5px solid rgba(255, 253, 253, 0.486);
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  padding: 15px;
+}
+.content-box-wrapper .boton-2:hover {
+  font-size: 20px;
+  background-color: white;
+  color: rgba(202, 64, 64, 0.7450980392);
+}
+
 .bebidas {
   background-image: url("../multimedia/bebidas.jpg");
   background-repeat: no-repeat;
@@ -682,6 +705,358 @@ button:hover {
   background-color: rgba(202, 64, 64, 0.7450980392);
   padding: 5px;
   border-radius: 15px;
+}
+
+.content-box-wrapper .boton-2 {
+  text-align: center;
+  background-color: rgba(202, 64, 64, 0.7450980392);
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  color: white;
+  border-top: 0.5px solid rgba(255, 253, 253, 0.486);
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  padding: 15px;
+}
+.content-box-wrapper .boton-2:hover {
+  font-size: 20px;
+  background-color: white;
+  color: rgba(202, 64, 64, 0.7450980392);
+}
+
+.bebidas-alcoholicas {
+  background-image: url("../multimedia/bebidas-alcoholicas.jpg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  text-align: center;
+  padding: 80px;
+  background-color: black;
+  margin: 20px;
+  color: rgb(255, 255, 255);
+  border-radius: 20px;
+}
+.bebidas-alcoholicas span {
+  background-color: rgba(202, 64, 64, 0.7450980392);
+  padding: 5px;
+  border-radius: 15px;
+}
+
+.content-box-wrapper .boton-2 {
+  text-align: center;
+  background-color: rgba(202, 64, 64, 0.7450980392);
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  color: white;
+  border-top: 0.5px solid rgba(255, 253, 253, 0.486);
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  padding: 15px;
+}
+.content-box-wrapper .boton-2:hover {
+  font-size: 20px;
+  background-color: white;
+  color: rgba(202, 64, 64, 0.7450980392);
+}
+
+.carniceria {
+  background-image: url("../multimedia/carniceria.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  text-align: center;
+  padding: 80px;
+  background-color: black;
+  margin: 20px;
+  color: rgb(255, 255, 255);
+  border-radius: 20px;
+}
+.carniceria span {
+  background-color: rgba(202, 64, 64, 0.7450980392);
+  padding: 5px;
+  border-radius: 15px;
+  text-align: 5px;
+}
+
+.content-box-wrapper .boton-2 {
+  text-align: center;
+  background-color: rgba(202, 64, 64, 0.7450980392);
+  width: 100%;
+  height: 100%;
+  color: white;
+  border-top: 0.5px solid rgba(255, 253, 253, 0.486);
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  padding: 15px;
+}
+.content-box-wrapper .boton-2:hover {
+  font-size: 5px;
+  background-color: rgb(117, 51, 51);
+  color: rgba(202, 64, 64, 0.7450980392);
+}
+
+.congelados {
+  background-image: url("../multimedia/congelados.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  text-align: center;
+  padding: 80px;
+  background-color: black;
+  margin: 20px;
+  color: rgb(255, 255, 255);
+  border-radius: 20px;
+}
+.congelados span {
+  background-color: rgba(202, 64, 64, 0.7450980392);
+  padding: 5px;
+  border-radius: 15px;
+}
+
+.content-box-wrapper .boton-2 {
+  text-align: center;
+  background-color: rgba(202, 64, 64, 0.7450980392);
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  color: white;
+  border-top: 0.5px solid rgba(255, 253, 253, 0.486);
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  padding: 15px;
+}
+.content-box-wrapper .boton-2:hover {
+  font-size: 20px;
+  background-color: white;
+  color: rgba(202, 64, 64, 0.7450980392);
+}
+
+.fiambreria {
+  background-image: url("../multimedia/fiambreria.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  text-align: center;
+  padding: 80px;
+  background-color: black;
+  margin: 20px;
+  color: rgb(255, 255, 255);
+  border-radius: 20px;
+}
+.fiambreria span {
+  background-color: rgba(202, 64, 64, 0.7450980392);
+  padding: 5px;
+  border-radius: 15px;
+}
+
+.content-box-wrapper .boton-2 {
+  text-align: center;
+  background-color: rgba(202, 64, 64, 0.7450980392);
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  color: white;
+  border-top: 0.5px solid rgba(255, 253, 253, 0.486);
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  padding: 15px;
+}
+.content-box-wrapper .boton-2:hover {
+  font-size: 20px;
+  background-color: white;
+  color: rgba(202, 64, 64, 0.7450980392);
+}
+
+.lacteos {
+  background-image: url("../multimedia/lacteos.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  text-align: center;
+  padding: 80px;
+  background-color: black;
+  margin: 20px;
+  color: rgb(255, 255, 255);
+  border-radius: 20px;
+}
+.lacteos span {
+  background-color: rgba(202, 64, 64, 0.7450980392);
+  padding: 5px;
+  border-radius: 15px;
+}
+
+.content-box-wrapper .boton-2 {
+  text-align: center;
+  background-color: rgba(202, 64, 64, 0.7450980392);
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  color: white;
+  border-top: 0.5px solid rgba(255, 253, 253, 0.486);
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  padding: 15px;
+}
+.content-box-wrapper .boton-2:hover {
+  font-size: 20px;
+  background-color: white;
+  color: rgba(202, 64, 64, 0.7450980392);
+}
+
+.limpieza {
+  background-image: url("../multimedia/limpieza.jpg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  text-align: center;
+  padding: 80px;
+  background-color: black;
+  margin: 20px;
+  color: rgb(255, 255, 255);
+  border-radius: 20px;
+}
+.limpieza span {
+  background-color: rgba(202, 64, 64, 0.7450980392);
+  padding: 5px;
+  border-radius: 15px;
+}
+
+.content-box-wrapper .boton-2 {
+  text-align: center;
+  background-color: rgba(202, 64, 64, 0.7450980392);
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  color: white;
+  border-top: 0.5px solid rgba(255, 253, 253, 0.486);
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  padding: 15px;
+}
+.content-box-wrapper .boton-2:hover {
+  font-size: 20px;
+  background-color: white;
+  color: rgba(202, 64, 64, 0.7450980392);
+}
+
+.panaderia {
+  background-image: url("../multimedia/panaderia.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  text-align: center;
+  padding: 80px;
+  background-color: black;
+  margin: 20px;
+  color: rgb(255, 255, 255);
+  border-radius: 20px;
+}
+.panaderia span {
+  background-color: rgba(202, 64, 64, 0.7450980392);
+  padding: 5px;
+  border-radius: 15px;
+}
+
+.content-box-wrapper .boton-2 {
+  text-align: center;
+  background-color: rgba(202, 64, 64, 0.7450980392);
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  color: white;
+  border-top: 0.5px solid rgba(255, 253, 253, 0.486);
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  padding: 15px;
+}
+.content-box-wrapper .boton-2:hover {
+  font-size: 20px;
+  background-color: white;
+  color: rgba(202, 64, 64, 0.7450980392);
+}
+
+.pastas {
+  background-image: url("../multimedia/pastas.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  text-align: center;
+  padding: 80px;
+  background-color: black;
+  margin: 20px;
+  color: rgb(255, 255, 255);
+  border-radius: 20px;
+}
+.pastas span {
+  background-color: rgba(202, 64, 64, 0.7450980392);
+  padding: 5px;
+  border-radius: 15px;
+}
+
+.content-box-wrapper .boton-2 {
+  text-align: center;
+  background-color: rgba(202, 64, 64, 0.7450980392);
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  color: white;
+  border-top: 0.5px solid rgba(255, 253, 253, 0.486);
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  padding: 15px;
+}
+.content-box-wrapper .boton-2:hover {
+  font-size: 20px;
+  background-color: white;
+  color: rgba(202, 64, 64, 0.7450980392);
+}
+
+.verduleria {
+  background-image: url("../multimedia/verduleria.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  text-align: center;
+  padding: 80px;
+  background-color: black;
+  margin: 20px;
+  color: rgb(255, 255, 255);
+  border-radius: 20px;
+}
+.verduleria span {
+  background-color: rgba(202, 64, 64, 0.7450980392);
+  padding: 5px;
+  border-radius: 15px;
+}
+
+.content-box-wrapper .boton-2 {
+  text-align: center;
+  background-color: rgba(202, 64, 64, 0.7450980392);
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  color: white;
+  border-top: 0.5px solid rgba(255, 253, 253, 0.486);
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  padding: 15px;
+}
+.content-box-wrapper .boton-2:hover {
+  font-size: 20px;
+  background-color: white;
+  color: rgba(202, 64, 64, 0.7450980392);
 }
 
 /* FOOTER */
@@ -845,7 +1220,7 @@ section {
   }
   .d-flex {
     height: 40px;
-    width: 225px;
+    width: 200px;
   }
   .imagen-2 {
     height: 50px;
@@ -864,7 +1239,7 @@ section {
     font-size: 15px;
   }
   #navbarSupportedContent ul li a {
-    font-size: 30px;
+    font-size: 15px;
   }
 }
 /* FIN DEL HEADER/NAVBAR PARA MOBILE */
@@ -885,16 +1260,16 @@ section {
     display: flex;
     width: 100px;
     height: 100px;
-    margin: 20px;
+    margin: 0px;
     border-radius: 15%;
   }
   .d-flex {
-    height: 60px;
-    width: 550px;
+    height: 40px;
+    width: 500px;
   }
   .imagen-2 {
-    height: 50px;
-    width: 50px;
+    height: 30px;
+    width: 30px;
   }
   #navbarSupportedContent ul {
     justify-content: space-between;
@@ -903,13 +1278,13 @@ section {
   }
   #navbarSupportedContent ul li .nav-link {
     color: white;
-    font-size: 30px;
+    font-size: 15px;
     align-items: center;
     text-align: center;
-    margin-left: 35px;
+    margin-left: 0px;
   }
   #navbarSupportedContent ul li a {
-    font-size: 30px;
+    font-size: 15px;
   }
 }
 /* FOOTER MEDIA QUERIES */
@@ -960,9 +1335,9 @@ section {
 @media screen and (min-width: 768px) {
   .titulo-2 {
     display: flex;
-    margin: 50px;
-    font-size: calc(1.325rem + 0.9vw);
-    padding: 15px;
+    margin: 30px;
+    font-size: calc(1rem + 0.9vw);
+    padding: 8px;
     font-family: "ABeeZee", sans-serif;
     text-align: center;
     justify-content: center;
@@ -1088,7 +1463,7 @@ section {
     justify-content: center;
     align-items: center;
   }
-  .contenedor-servicios .servicio-1 .servicio-2 {
+  .contenedor-servicios .servicio-2 {
     background-image: url(../multimedia/carne-envasada.jpg);
     display: flex;
     align-items: center;
@@ -1099,7 +1474,7 @@ section {
     margin-bottom: 0.5rem;
     text-align: center;
   }
-  .contenedor-servicios .servicio-1 .servicio-2 p {
+  .contenedor-servicios .servicio-2 p {
     color: white;
     font-size: 1.3rem;
     background-color: darkgrey;
@@ -1110,7 +1485,7 @@ section {
     justify-content: center;
     align-items: center;
   }
-  .contenedor-servicios .servicio-1 .servicio-3 {
+  .contenedor-servicios .servicio-3 {
     background-image: url(../multimedia/envio-domicilio.jpg);
     display: flex;
     align-items: center;
@@ -1121,7 +1496,7 @@ section {
     margin-bottom: 0.5rem;
     text-align: center;
   }
-  .contenedor-servicios .servicio-1 .servicio-3 p {
+  .contenedor-servicios .servicio-3 p {
     color: white;
     font-size: 1.3rem;
     background-color: darkgrey;
