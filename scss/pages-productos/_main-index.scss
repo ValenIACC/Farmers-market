@@ -5,31 +5,29 @@
     height: 100%;
     padding: 10px;
 }
-
 /* SECCION INICIO/SERVICIOS */
-
 @media screen and (min-width: 1200px) {
 	.contenedor-servicios {
-        @include servicio-contenedor(repeat(3, 1fr), 1fr, 55px);
+        @include servicio-contenedor(repeat(3, 1fr), 1fr, 30px);
 		.servicio-1 {
 			background-image: url(../multimedia/tabla-fiambre.jpeg);
 			@include servicio();
 			p {
-				@include servicio-p(2rem);
+				@include servicio-p(1.3rem);
 			}
 		}
 		.servicio-2 {
 			background-image: url(../multimedia/carne-envasada.jpg);
 			@include servicio();
 			p {
-				@include servicio-p(2rem);
+				@include servicio-p(1.3rem);
 			}
 		}
 		.servicio-3 {
 			background-image: url(../multimedia/envio-domicilio.jpg);
 			@include servicio();
 			p {
-                @include servicio-p(2.3rem);
+                @include servicio-p(1.3rem);
 		}
 	}
     }

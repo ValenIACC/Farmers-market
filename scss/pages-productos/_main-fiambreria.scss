@@ -1,0 +1,38 @@
+.fiambreria{
+    background-image: url('../multimedia/fiambreria.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+    text-align: center;
+    padding: 80px;
+    background-color: black;
+    margin: 20px;
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    span{
+        background-color: #ca4040be;
+        padding: 5px;
+        border-radius: 15px;
+    }
+}
+.content-box-wrapper{
+    @extend %card-categorias;
+    .boton-2{
+        text-align: center;
+        background-color:#ca4040be;
+        width: 100%;
+        height: 100%;
+        font-size: 20px;
+        color: white;
+        border-top: .5px solid rgba(255, 253, 253, 0.486);
+        border-left: none;
+        border-right: none;
+        border-bottom: none;
+        padding: 15px;
+    }
+    .boton-2:hover{
+        font-size: 20px;
+        background-color: white;
+        color: #ca4040be;
+    }
+}

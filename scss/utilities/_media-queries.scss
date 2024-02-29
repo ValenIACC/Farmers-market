@@ -1,6 +1,5 @@
 /* HEADER/ navbar  PARA MOVIL */
 /* Mobile -> emtre 320px y 768 px */
-
 @media screen and (max-width: 767px){
     header{
         @include header();
@@ -13,7 +12,7 @@
         flex-direction: column;
     }
     .d-flex{
-        @include tamaño(40px, 225px);
+        @include tamaño(40px, 200px);
     }
     .imagen-2 {
         @include tamaño(50px, 50px);
@@ -34,15 +33,13 @@
                     font-size: 15px;
                 }
 				a {
-					font-size: 30px;
+					font-size: 15px;
 				}
 			}
 		}
 	}
 }
-
 /* FIN DEL HEADER/NAVBAR PARA MOBILE */
-
 /* INICIO DEL HEADER/NAVBAR PARA TABLET */
 /* Tablet -> entre  768 y 1024 */ 
 @media screen and (min-width: 768px) {
@@ -53,14 +50,14 @@
 		display: flex;
 		width: 100px;
 		height: 100px;
-		margin: 20px;
+		margin: 0px;
 		border-radius: 15%;
 	}
 	.d-flex {
-        @include tamaño(60px, 550px);
+        @include tamaño(40px, 500px);
 	}
 	.imagen-2 {
-        @include tamaño(50px, 50px);
+        @include tamaño(30px, 30px);
 	}
 	#navbarSupportedContent {
 		ul {
@@ -70,21 +67,19 @@
 			li {
 				.nav-link {
 					color: $color-principal;
-					font-size: 30px;
+					font-size: 15px;
 					align-items: center;
 					text-align: center;
-					margin-left: 35px;
+					margin-left: 0px;
 				}
 				a {
-					font-size: 30px;
+					font-size: 15px;
 				}
 			}
 		}
 	}
 }
-
 /* FOOTER MEDIA QUERIES */
-
 @media (max-width: 880px) {
 	.footer-distributed {
 		font: bold 14px sans-serif;
@@ -111,7 +106,6 @@
 		}
 	}
 }
-
 /* FUENTE PARA TITULO EN LA PAGINA PRINCIPAL */
     /* version mobile */
     @media screen and (max-width:767px){
@@ -129,14 +123,13 @@
         border-radius: 15px;
     }
 }
-
     /* VERSION TABLET AND DESKTOP */
     @media screen and (min-width:768px) {
     .titulo-2{
         display: flex;
-        margin: 50px;
-        font-size: calc(1.325rem + .9vw);
-        padding: 15px;
+        margin: 30px;
+        font-size: calc(1rem + .9vw);
+        padding: 8px;
         font-family:$font_1;  
         text-align: center;
         justify-content: center;
@@ -146,9 +139,7 @@
         border-radius: 15px;
     }
 }
-
 /* SECCION INICIO/SERVICIOS */
-
     /* VERSION MOBILE */
 @media screen and (max-width:767px) {
 	.contenedor-servicios {
@@ -176,9 +167,7 @@
 		}
 	}
 }
-
     /* VERSION TABLET */
-    
     @media screen and (min-width:768px) and (max-width: 1199px) {
         .contenedor-servicios {
             @include servicio-contenedor(repeat(3, 1fr), 1fr, 55px);
@@ -188,6 +177,7 @@
                 p {
                     @include servicio-p(1.3rem);
             }
+        }
             .servicio-2 {
                 background-image: url(../multimedia/carne-envasada.jpg);
                 @include servicio();
@@ -202,9 +192,9 @@
                     @include servicio-p(1.3rem);
             }
         }
-    }
+    }   
         }
-    }
+    
     /* TITULO PRODUCTOS DESTACADOS */
         /* version mobile */
     @media screen and (max-width: 767px) {
@@ -240,11 +230,8 @@
         }
         
     }
-
-
 /* SECCION CATEGORIAS/ PRODUCTOS DESTACADOS/ CATEGORIAS  */
     /* VERSION MOBILE */
-
 @media screen and (max-width: 767px) {
 	.contenedor-categorias {
 		@include categorias-contenedor();
@@ -315,9 +302,7 @@
 		}
 	}
 }
-
     /* VERSION TABLET */
-    
 @media screen and ( min-width: 768px) and ( max-width: 1199px) {
         .contenedor-categorias {
             @include categorias-contenedor();

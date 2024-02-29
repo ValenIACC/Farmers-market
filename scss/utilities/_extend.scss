@@ -1,9 +1,11 @@
 %card-categorias{
   .content{
     display: grid;
-    grid-template-columns: repeat(auto-fit, 350px);
+    grid-template-columns: repeat(auto-fit, 250px);
     grid-template-rows: 1fr;
     grid-gap: 1em;
+    justify-content: center;
+    align-items: center;
   }
     .box-wrapper {
         display: flex;
@@ -18,16 +20,12 @@
         cursor: pointer;
         transition-duration: 0.5s;
     }
-    
     .box-wrapper:hover{
       box-shadow: 0px 5px 70px rgba(255, 0, 0, 0.4);
     }
-      
-    
         img {
           max-width: 100%;
         }
-      
         .success {
           display: flex;
           position:absolute;
@@ -36,12 +34,10 @@
           transform: translate(-50%,-50%);
           opacity: 0;
           z-index: 999;
-      
           .expanded & {
             opacity:1;
             transition: opacity 0.3s 0.6s;
           }
-      
           &:before,
           &:after {
             content: '';
@@ -49,13 +45,11 @@
             position: absolute;
             background-color: #fff;
           }
-      
           &:before {
             width: 40px;
             height: 20px;
             transform: rotate(45deg);
           }
-      
           &:after {
             width: 88px;
             height: 20px;
@@ -64,27 +58,22 @@
             left: 8px;
           }
         }
-      
-      
       .title {
-        font-size: 2em;
+        font-size: 1.2em;
         font-weight: 900;
         text-transform: uppercase;
         margin: 0;
         font-family: 'Acme', sans-serif;
       }
-      
       .desc {
         font-family: 'Satisfy', cursive;
-        font-size: 1.2em;
+        font-size: 1em;
         color: white;
       }
-      
       .box-content{
         position: relative;
         z-index: 1;
         color: #fff;
-        
           &:before {
           content: '';
           width: 200%;
@@ -97,7 +86,6 @@
           left: -10%;
           z-index: -1;
         }
-        
         .buy {
           display: block;
           top: -80px;
@@ -106,7 +94,6 @@
           width: 70px;
           height: 70px;
           position: absolute;
-          
           span {
             width: 70px;
             height: 70px;
@@ -114,38 +101,33 @@
             display: block;
             border-radius: 50%;
             position: absolute;
-            font-size: 36px; 
+            font-size: 30px; 
             color: #fff;
             transition: all 0.3s ease;
             transform: translate(-50%,-50%);
             top: 50%;
             left: 50%;
-            
             i {
               padding: 15px;
             }
-      
             .expanded & {
               width: 750px;
               height: 750px;
-              
               i {
                 display: none;
               }
             }
           }
         }
-        
         .price {
           color: rgb(255, 255, 255);
-          font-size: 2em;
+          font-size: 1.5em;
           font-weight: 900;
           display: block;
           width: 100px;
           margin: 20px auto 0;
           position: relative;
           font-family: 'Satisfy', cursive;
-          
           &:after,
           &:before {
             content: '';
@@ -156,16 +138,13 @@
             background-color: #ddd;
             top: 18px;
           }
-          
           &:before {
             left: -50px;
           }
-          
           &:after {
             right: -50px;
           }
         }
-        
         .footer {
           ul {
             list-style: none;
@@ -174,6 +153,5 @@
           }
         }
       }
-    
 }
 
