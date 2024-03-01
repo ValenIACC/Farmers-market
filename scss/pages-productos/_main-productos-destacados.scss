@@ -4,38 +4,26 @@
 		display: flex;
         flex-flow: wrap;
 	}
-    .contenedor-destacados {
-		display: flex;
-        flex-flow: wrap;
-        justify-content: space-evenly;
-        gap: 5px;
-        margin: 8px;
-		font-size: 10PX;
-        .card {
-            width: 300px;
-            background-color: $color-principal;
-            border-radius: 90px, 50px;
-            overflow: hidden;
-            box-shadow: 22px 13px 31px 1px rgba(0,0,0,0.7);
-			font-size: 15px;
-        }
-    }
-    .card-texto {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        row-gap: 15px;
-        justify-content: center;
-    }
-    .precio {
-        display: flex;
-        font-size: 25px;
-        font-weight: 700;
-        color: $background-principal;
-        padding: 5px;
-    }
-    
+    .content-box-wrapper{
+		@extend %card-categorias;
+		.boton-2{
+			text-align: center;
+			background-color:#ca4040be;
+			width: 100%;
+			height: 100%;
+			font-size: 10px;
+			color: white;
+			border-top: .5px solid rgba(255, 253, 253, 0.486);
+			border-left: none;
+			border-right: none;
+			border-bottom: none;
+		}
+		.boton-2:hover{
+			font-size: 20px;
+			background-color: white;
+			color: #ca4040be;
+		}
+	}
 /* TITULO PRODUCTOS DESTACADOS */
 .titulo-3{
     display: flex;
